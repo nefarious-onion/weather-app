@@ -1,4 +1,3 @@
-const key = '33PF7HJhi4ky6ArNLbG4LAJFNSf28CGC';
 
 const getCity = async (city) => {
 
@@ -8,6 +7,7 @@ const getCity = async (city) => {
     const response = await fetch(base + query);
     const data = await response.json();
     
+    //returns a promise
     return data[0];
 }
 
